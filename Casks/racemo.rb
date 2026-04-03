@@ -1,8 +1,16 @@
 cask "racemo" do
-  version "0.0.2"
-  sha256 "3f7d889d174f6f5f9eb7e7f7ec20209b94f5a126887e446ae3f6a7a0683d329c"
+  version "0.0.3"
 
-  url "https://github.com/racemo-dev/racemo-client/releases/download/v#{version}/Racemo_#{version}_Mac_universal.dmg"
+  on_arm do
+    sha256 "c7c8bb36135bf7dbecc9ceeed8ee07dd5c770b20d50a9e70bf4430bfe70a2a5a"
+    url "https://github.com/racemo-dev/racemo-client/releases/download/v#{version}/Racemo_#{version}_Mac_aarch64.dmg"
+  end
+
+  on_intel do
+    sha256 "3c23c95c1787423afeb656b58b0bce76cd3c7e76920ea38500e936e2de7dc057"
+    url "https://github.com/racemo-dev/racemo-client/releases/download/v#{version}/Racemo_#{version}_Mac_x64.dmg"
+  end
+
   name "Racemo"
   desc "Desktop-native terminal multiplexer built with Rust and Tauri"
   homepage "https://github.com/racemo-dev/racemo"
