@@ -1,13 +1,13 @@
 cask "racemo" do
-  version "0.0.3"
+  version "0.0.4"
 
   on_arm do
-    sha256 "28d9920d3e82d617dca44197be2601b93409b78495e4ea01eddc194ff87f64f5"
+    sha256 "27b95a3505d45dd81c27f52ae01fdd2736b1684bf9fc982cd4c3bc72a2665213"
     url "https://github.com/racemo-dev/racemo/releases/download/v#{version}/Racemo_#{version}_Mac_aarch64.dmg"
   end
 
   on_intel do
-    sha256 "b69e3ca671e503dd297e3d6c8dea96b87e6e619a0a8e20b74920d69fce906139"
+    sha256 "593b8441691aab1bea7f155b60d2f767326a74bbb70d704c8c27e2d8832efe00"
     url "https://github.com/racemo-dev/racemo/releases/download/v#{version}/Racemo_#{version}_Mac_x64.dmg"
   end
 
