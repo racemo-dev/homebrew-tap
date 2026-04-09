@@ -1,6 +1,6 @@
 cask "racemo" do
-  version "0.0.5"
-  sha256 "4b48fd070d437ad5ee073326020dd2295b5c1da045ea95a9da94abfce12234f5"
+  version "0.0.6"
+  sha256 "aeefd96e594c16dfa22c053d456842097b9e5b621e9e24983bf797daf53d5a39"
 
   url "https://github.com/racemo-dev/racemo/releases/download/v#{version}/Racemo_#{version}_Mac.dmg"
   name "Racemo"
